@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>EduMax - Add Announcement page</title>
+    <!-- Edit for each new page created from this template -->
+    <meta name="author" content="TM252 Module Team" />
+    <meta
+      name="description"
+      content="An online learning resource by students for students"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="../css/custom.css" />
+    <!-- Custom stylesheet - linked after Bootstrap so that entries here take precedence and override Bootstrap's style -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Fixed-width container. This container's max-width will change at different breakpoints -->
+    <div class="container-fluid">
+      <header class="header">
+        <!--header content to go here-->
+        <!-- Row 1 -->
+        <div class="row flex-nowrap justify-content-center header-row">
+          <div class="col-4">
+            <!-- logo -->
+            <img
+              src="../images/EduMax_logo.png"
+              alt="EduMax"
+              class="img-fluid"
+            />
+          </div>
+          <div class="d-flex align-items-center col-5 lg-me-3">
+            <!-- site name -->
+            <h1 class="header lg-ms-5">EduMax</h1>
+          </div>
+          <div
+            class="col-3 my-2 d-flex justify-content-center align-items-start flex-shrink-0"
+          >
+            <!-- login button -->
+            <span class="d-flex gap-2 align-items-center me-sm-4">
+              <i class="fa-solid fa-user"></i>
+              <span class="adminUser d-none d-sm-inline">Admin User</span>
+            </span>
+          </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="row g-0 bg-dark">
+          <div class="col">
+            <nav class="navbar navbar-expand-lg p-2 m-2" data-bs-theme="dark">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                  <!-- primary navigation -->
+                  <a class="nav-link" href="../index.html">Home</a>
+
+                  <a class="nav-link pt-2" href="">Student</a>
+                  <a class="nav-link pt-2" href="">Module Catalogue</a>
+                  <a class="nav-link pt-2" href="#">Forums</a>
+                  <a class="nav-link pt-2" href="#">News Items</a>
+                  <a class="nav-link pt-2" href="">Announcement</a>
+                  <a class="nav-link pt-2" href="#">Security</a>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- Row 3 search -->
+        <div class="row g-0">
+          <div class="col bg-white">
+            <!-- search box -->
+            <form class="d-flex mt-2 gap-2" role="search">
+              <input
+                class="form-control border-2 border-light rounded-4"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-dark border-2 border-light rounded-4"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </header>
+      <!-- Row 3 -->
+      <div class="row ms-0">
+        <div class="col">
+          <nav
+            style="--bs-breadcrumb-divider: &quot;>&quot;"
+            aria-label="breadcrumb"
+          >
+            <!-- breadcrumbs -->
+
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="announcement">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Announcement
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!-- page-specific content in sections -->
+      <main class="container">
+        <!-- title -->
+        <div class="row d-flex justify-content text-align-start">
+          <div class="col">
+            <h1 class="mb-4 font-weight-bold mx-5">Add Announcement</h1>
+          </div>
+        </div>
+        <form
+          action="https://students.open.ac.uk/mct/tm252/reflect/reflect.php"
+          method="POST"
+          class="bg-light rounded mx-5 p-2 shadown-lg shadow-sm border-0"
+        >
+          <!-- hidden input  -->
+          <input
+            type="hidden"
+            id="hiddenInput"
+            name="item_ID"
+            value="30001000-5000-654321fedcba"
+          />
+          <!-- subject -->
+          <div class="row">
+            <div class="col mb-3">
+              <label for="subjectInput" class="form-label">
+                <i class="fa-solid fa-align-left me-1"></i>
+                Subject</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="subjectInput"
+                placeholder="Enter the subject"
+                value="End of Module"
+              />
+            </div>
+          </div>
+
+          <!-- sender role and name -->
+          <div class="row">
+            <!-- sender name -->
+            <div class="form-group col-md-6 mb-3">
+              <label for="inputName" class="name-label my-2">
+                <i class="fa-solid fa-user me-1"></i>
+                Sender's Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="inputName"
+                placeholder="Enter your name"
+                value="Georges Student"
+              />
+            </div>
+            <!-- sender role -->
+            <div class="form-group col-md-6 mb-3">
+              <label for="exampleFormControlSelect1" class="name-label my-2">
+                <i class="fa-solid fa-briefcase me-1"></i>
+                Sender's Role</label
+              >
+              <select class="form-select" id="exampleFormControlSelect1">
+                <option>Admin 01</option>
+                <option>Admin 02</option>
+                <option>Admin 03</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label for="contentTextAreaForm" class="form-label">
+              <i class="fa-solid fa-file-lines me-1"></i>
+              Message</label
+            >
+            <textarea
+              class="form-control"
+              rows="6"
+              id="contentTextAreaForm"
+              placeholder="Write the announcement her..."
+            >
+Your EMA for TM252 is due today 15 September 2026 </textarea
+            >
+          </div>
+          <!-- attachment form -->
+          <div class="mb-3">
+            <label for="formConFile" class="form-label"
+              ><i class="fa-solid fa-paperclip me-1"></i> Attachment</label
+            >
+            <input
+              type="file"
+              class="form-control"
+              id="formConFile"
+              name="add_Attachment"
+            />
+          </div>
+
+          <!-- date ,time and priority forms -->
+          <div class="row">
+            <!-- date here -->
+            <div class="col-md-5 mb-3">
+              <label for="formControl" class="form-label"
+                ><i class="fa-solid fa-calendar me-2"></i>Select Date:
+              </label>
+              <div
+                id="datepicker"
+                class="input-group"
+                data-date-format="mm-dd-yyyy"
+              >
+                <input
+                  class="form-control"
+                  type="date"
+                  id="formControl"
+                  name="selected_date"
+                  value="2026-09-13"
+                />
+              </div>
+            </div>
+            <!-- time here -->
+            <div class="col-md-3 mb-3">
+              <label for="selecTime" class="form-label"
+                ><i class="fa-regular fa-clock me-2"></i>Select Time</label
+              >
+              <div
+                class="time-picker"
+                data-coreui-locale="en-UK"
+                data-coreui-seconds="false"
+                data-coreui-toggle="time-picker"
+              >
+                <input
+                  type="time"
+                  class="form-control"
+                  id="selecTime"
+                  name="selected-time"
+                  value="09:07"
+                />
+              </div>
+            </div>
+            <!-- priority here -->
+            <div class="col-md-4 mb-3">
+              <label for="priority" class="form-label">
+                <i class="fa-solid fa-flag me-2"></i>Priority</label
+              >
+              <select class="form-select" id="priority">
+                <option value="High">High</option>
+                <option value="Normal" selected>Normal</option>
+                <option value="Low">Low</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- delete,saveAs draff and post announcement btns -->
+          <div class="row mt-4">
+            <div class="d-grid gap-2 d-sm-flex justify-content-md-end">
+              <button type="submit" class="btn btn-danger" id="deleteBtn">
+                Delete
+              </button>
+              <button type="submit" class="btn btn-primary" id="saveBtn">
+                Save as Draft
+              </button>
+              <button type="submit" class="btn btn-success" id="submitBtn">
+                Send Announcement
+              </button>
+            </div>
+          </div>
+        </form>
+      </main>
+      <footer class="sticky-bottom">
+        <div
+          class="row footerRow d-flex justify-content between mt-5 align-items-center py-sm-3 py-md-3 py-lg-4"
+        >
+          <div class="col ms-4">
+            <nav
+              class="nav d-flex flex-wrap justify-content-between justify-content-md-start gap-0 gap-lg-3 ps-lg-5"
+            >
+              <!-- secondary navigation to go here -->
+              <a class="nav-link text-dark" href="">Privacy</a>
+              <a class="nav-link text-dark" href="">About Us</a>
+              <a class="nav-link text-dark" href="">Support</a>
+            </nav>
+          </div>
+          <div class="col d-flex justify-content-end me-4">
+            <!-- copyright notice -->
+            <p>&copy; EduMax 2026</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+  </body>
+</html>
